@@ -2,15 +2,12 @@
 <html lang="es">
     <head>
     	<meta charset="UTF-8">
-	<META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">
-	<META NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">
-	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     	<meta name="description" content="">
     	<title>4 Ruedas.com - La Forma más Fácil y Segura de Negociar tu Vehículo</title>
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
     	<link href="https://fonts.googleapis.com/css?family=Exo:200" rel="stylesheet">
     	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed" rel="stylesheet">
         <style>
@@ -32,14 +29,19 @@
                 font-size: 1.15rem;
                 color: #898989;
             }
+            .desktop {
+              display: block!important;
+            }
+            .desktop-inline {
+              display: inline!important;
+            }
+            .in-mobile {
+                display: none!important;
+            }
 
-
-
-
-
-            /*.middle-grey{
+            .middle-grey{
                 color: #999!important;
-            }*/
+            }
             .rm10{
                 margin-right: 20px!important;
             }
@@ -59,13 +61,6 @@
             .bg-grey-light{
                 background-color: #edecea!important;
             }
-
-
-
-/*
-
-
-
 
             .ui.search .prompt {
                 border-radius:0.28571429rem;
@@ -92,11 +87,9 @@
                 padding-left: 5px;
             }
 
-            */
-
             /*inicio menu*/
 
-            /*.ui.menu{
+            .ui.menu{
                 font-family: 'Raleway', sans-serif!important;
             }
 
@@ -110,23 +103,6 @@
 
             .ui.menu .item:before{
                 background: none!important;
-            }
-
-            .ui.orange.button.sell {
-                margin-top: 4px!important;
-                transition: all 0.4s;
-                font-family: 'Raleway', sans-serif!important;
-                color: #fff!important;
-                box-shadow: none!important;
-            }
-
-            .ui.search{
-                margin-top: 6px;
-            }
-
-            #searchInput2 {
-                transition: all 0.4s;
-                width: 24em;
             }
 
             .ui.menu .item.ppal_menu{
@@ -151,46 +127,48 @@
             .main.menu.fixed {
                 background-color: #FFFFFF;
                 border: 1px solid #DDD;
+                height: 55px;
             }
             .menu {
                 border: none !important;
                 outline: none !important;
             }
-
-            a#signin2.item{
-                color: #fff;
+            .ui.orange.button.sell {
+                margin-top: 4px!important;
+                font-family: 'Raleway', sans-serif!important;
+                color: #fff!important;
             }
-
-            .ui.icon.buttons .button.little-acronym, .ui.icon.button.little-acronym{
-                padding: 0px;
-            }
-
-            .little-acronym{
-                font-weight: normal!important;
-                width: 34px;
-            }
-
-            .ui.menu .dropdown-nav.dropdown.item .menu{
-                left: auto;
-                right: 0em;
-            }
-
-            .ui.floating.label.total_fav_container{
-                padding: 3px 6px!important;
-                border-radius: 20px!important;
-                margin: 16px 16px 0px -25px!important;
-            }
-
-
-            .ui.top.fixed.large.pointing.menu a:hover {
-                color: #005D80 !important;
-            }
-
             .ui.orange.button {
                 background: #ff9700 !important;
                 transition: all 0.4s !important;
                 font-family: 'Raleway', sans-serif;
                 box-shadow: none!important;
+            }
+            #searchInput2 {
+                transition: all 0.4s;
+                width: 24em;
+            }
+            a#signin2.item{
+                color: #fff;
+            }
+            .ui.icon.buttons .button.little-acronym, .ui.icon.button.little-acronym{
+                padding: 0px;
+            }
+            .little-acronym{
+                font-weight: normal!important;
+                width: 34px;
+            }
+            .ui.menu .dropdown-nav.dropdown.item .menu{
+                left: auto;
+                right: 0em;
+            }
+            .ui.floating.label.total_fav_container{
+                padding: 3px 6px!important;
+                border-radius: 20px!important;
+                margin: 16px 16px 0px -25px!important;
+            }
+            .ui.top.fixed.large.pointing.menu a:hover {
+                color: #005D80 !important;
             }
             .ui.blue.button {
                 background: #006EA2 !important;
@@ -198,16 +176,9 @@
                 transition: all 0.4s !important;
                 box-shadow: none!important;
             }
-            .ui.blue.button:hover {
-                background: #ABABAB !important;
+            .ui.search {
+                margin-top: 6px;
             }
-
-            */
-
-
-
-
-
 
             /*inicio header*/
 
@@ -236,7 +207,7 @@
                 margin: 20px;
             }
 
-            /*.prompt.header {
+            .prompt.header {
                 box-shadow: 0px 0px 8px rgba(0,0,0,0.4) !important;
             }
 
@@ -254,8 +225,6 @@
                 transition: all 0.4s !important;
                 font-family: 'Raleway', sans-serif!important;
             }
-
-            */
 
             .btn-sell, .btn-follow {
                 color: white !important;
@@ -285,7 +254,7 @@
                 margin: 10px!important;
             }
 
-            /*.black.bt-prn {
+            .black.bt-prn {
                 background: #006A91 !important;
                 color: white !important;
                 transition: all 0.4s !important;
@@ -299,7 +268,6 @@
                 left: 0;
                 right: 0;
             }
-            */
 
             .go_down {
                 margin-top: 7rem;
@@ -310,8 +278,6 @@
                 font-family: 'Exo', sans-serif!important;
 
             }
-
-
 
             /*inicio makes*/
 
@@ -623,6 +589,18 @@
             /*responsive movil*/
 
             @media (max-width: 767px) {
+                .in-mobile {
+                    display: inline-block!important;
+                }
+
+                .desktop {
+                    display: none!important;
+                }
+
+                .desktop-inline {
+                    display: none!important;
+                }
+
                 h1 {
                     font-size: 2.1rem;
                 }
@@ -690,7 +668,7 @@
                     float: none!important;
                 }
                 .full-content{
-                    background-image:url(/images/bg-mobile.jpg);
+                    background-image:url(images/bg-mobile.jpg);
                     background-size: 100%;
                     font-size: 18px!important;
                 }
@@ -751,8 +729,8 @@
     <body>
         <div class="ui borderless top fixed main_mobile in-mobile menu" id="nav-responsive">
             <div class="ui container full_height">
-                <div class="item logo-2" style="padding: 10px!important;">
-                    <a class="page-scroll" href="#top"><img src="/images/logo-4ruedas.png"></a>
+                <div class="item logo-2">
+                    <a class="page-scroll" href="#top"><img src="images/logo-4ruedas.png"></a>
                 </div>
                 <div class="right item" style="padding-right: 0; margin-right: 0;">
                     <div class="left item" id="hamberguer">
@@ -766,7 +744,7 @@
         <div class="ui borderless top main menu menu-hl desktop fixed">
             <div class="ui container full_height">
                 <div class="item logo">
-                    <a class="page-scroll" href="#top"><img src="/images/logo-4ruedas.png"></a>
+                    <a class="page-scroll" href="#top"><img src="images/logo-4ruedas.png"></a>
                 </div>
                 <div class="right menu">
                     <div class="item" id="buscar-nav">
@@ -781,24 +759,12 @@
                     </div>
                     <a class="item" id="favs">
                         <i class="empty heart large icon" id="icon-favs"  data-title='Favoritos' data-content='Agrega tus favoritos y síguelos desde aquí.' data-position="bottom right"></i>
-                        <div class="total_fav_container hide floating ui red label"></div>
                     </a>
                     <a class="item" id="signin2">Entrar</a>
 
                     <div class="item" id="sell">
                         <div class="ui orange button sell">Vender</div>
                     </div>
-                    <!-- <div class="ui dropdown item _flag" style="color:#fff;">
-                        ve <i class="dropdown icon"></i>
-                        <div class="menu" style="background: rgba(255, 255, 255, 0.2) !important;">
-                            <a class="item" style="color:#fff!important">
-                                <label style="color:#fff!important">ve</label>
-                            </a>
-                            <a class="item" style="color:#fff!important">
-                                <label style="color:#fff!important">pa</label>
-                            </a>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -1323,12 +1289,101 @@
                 </div>
 
             </div>
-        </div>
 
     </body>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/semantic.min.js"></script>
-    <script src="js/visibility.js"></script>
-    <script src="js/sidebar.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/visibility.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/sidebar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/modal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/dimmer.min.js"></script>
+
+    <script>
+
+        $('#icon-favs').popup({on: 'hover'});
+        // sidebar
+        $('.ui.sidebar')
+            .sidebar({
+                mobileTransition: 'overlay',
+                selector:{
+                    omitted: '.ui.modal, .ui.dimmer'
+                },
+                context: $('#context-container')
+            }).sidebar('attach events','.toc.item');
+
+        // js animate scroll menu
+        $('.logo-header').visibility({
+            onUpdate: function(calculations) {
+                if(calculations.onScreen ){
+
+                    //////// ON TOP ////////
+
+                    $('.main.menu.menu-hl').css('background', 'rgba(255,255,255,0.2)');
+                    $('.main.menu.menu-hl').css('box-shadow', '0px 0px 0px rgba(0,0,0,0)');
+                    $('.logo').css('opacity', '0');
+                    $('#sell').css('display', 'none');
+                    $('.ui-to-top').css('display', 'none!important');
+                    $('#buscar-nav').css('display', 'none');
+                    $('.empty.heart.icon').css('color', '#fff !important');
+                    $('a#signin2.item').css('color', '#fff');
+                    $('.little-acronym').css('background', '#fff');
+                    $('.little-acronym').css('color', '#006EA2');
+                    $('.ui.menu .dropdown-nav.dropdown.item .menu').css('right', '0em');
+                    $('.ui.menu .dropdown-nav.dropdown.item .menu').css('left', 'auto');
+                    $('.menu.favs').css('background', 'rgba(255, 255, 255, 0.2)');
+                    $('.ui.menu .item > a.user-nav').css('color', '#fff');
+                    $('i.bg-white-icon.icon').css('color', '#fff');
+                    $('i.bg-white-icon.icon').css('box-shadow', '0 0 0 1px #fff inset');
+                    $('#icon-favs').css('color', '#fff');
+
+                    //////// MOBILE ////////
+
+                    $('.main_mobile.menu').css('background', 'rgba(255,255,255,0)');
+                    $('.main_mobile.menu').css('box-shadow', '0px 0px 0px rgba(0,0,0,0)');
+                    $(".logo-2").css('display', 'none');
+                    $("i.burguer").css('color', '#FFF');
+
+                }else{
+
+                    //////// NOT TOP ////////
+
+                    $('.main.menu.menu-hl').css('background', '#FFF');
+                    $('.main.menu.menu-hl').css('box-shadow', '0px 4px 10px rgba(0,0,0,0.1)');
+                    $('.logo').css('opacity', '1');
+                    $('#sell').css('display', 'block');
+                    $('.ui-to-top').css('display', 'block!important');
+                    $('#buscar-nav').css('display', 'block');
+                    $('.empty.heart.icon').css('color', '#006EA2 !important');
+                    $('a#signin2.item').css('color', '#006EA2');
+                    $('.little-acronym').css('background', '#006EA2');
+                    $('.little-acronym').css('color', '#fff');
+                    $('.ui.menu .dropdown-nav.dropdown.item .menu').css('right', 'auto');
+                    $('.ui.menu .dropdown-nav.dropdown.item .menu').css('left', '0em');
+                    $('.menu.favs').css('background', '#fff');
+                    $('.ui.menu .item > a.user-nav').css('color', '#006EA2');
+                    $('i.bg-white-icon.icon').css('color', '#006EA2');
+                    $('i.bg-white-icon.icon').css('box-shadow', '0 0 0 1px #006EA2 inset');
+                    $('#icon-favs').css('color', '#006EA2');
+
+                    //////// MOBILE ////////
+
+                    $('.main_mobile.menu').css('background', '#FFF');
+                    $('.main_mobile.menu').css('box-shadow', '0px 4px 10px rgba(0,0,0,0.1)');
+                    $(".logo-2").css('display', 'block');
+                    $("i.burguer").css('color', '#006EA2');
+
+                }
+            },
+        });
+
+        // show dropdown on hover
+        $('.main.menu .ui.dropdown').dropdown({
+            on: 'hover'
+        });
+
+        $('#context-container').removeClass("pushable");
+    </script>
 </html>
